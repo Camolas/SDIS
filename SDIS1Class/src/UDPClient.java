@@ -1,8 +1,19 @@
 import java.io.*;
 import java.net.*;
 
-public class UDPClient 
-{
+
+
+public class UDPClient {
+
+	private static String serviceAddressStr;
+	private static int servicePort;
+
+	private static String multicastAddressStr;
+	private static int multicastPort;
+
+	private static RequestType oper;
+	private static String plate, owner;
+
 
 	public static void main(String args[]) throws Exception
 	   {
